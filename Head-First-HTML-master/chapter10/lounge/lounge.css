@@ -35,9 +35,7 @@ h2 {
 }
 
 #elixirs{
-  border-style: solid;
-  border-width: thin;
-  border-color: #007e7e;
+  border: solid thin #007e7e;
   width: 200px;
 
   padding-right: 20px;
@@ -60,4 +58,22 @@ h2 {
 
 #elixirs h3 {
   color: #d12c47;
+}
+
+#footer{
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.cd{
+  font-style: italic;
+}
+
+.artist{
+  font-weight: bold;
+}
+
+a{
 }
