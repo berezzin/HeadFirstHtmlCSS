@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>The Starbuzz Bean Machine</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>The Starbuzz Bean Machine</title>
+</head>
+<body>
 
-    <h1>The Starbuzz Bean Machine</h1>
-    <h2>Fill out the form below and click submit to order</h2>
+  <h1>The Starbuzz Bean Machine</h1>
+  <h2>Fill out the form below and click submit to order</h2>
+  <form action="http://starbuzzcoffee.com/processorder.php" method="GET">
+    <p>
+      Choose your coffee:
+      <select name="beans">
+        <option value="Smes">Smes</option>        
+        <option value="Bolivia">Bolivia</option>        
+        <option value="Guatemala">Guatemala</option>        
+        <option value="Kenya">Kenya</option>        
+      </select>
+    </p>
+    <p>
+      Type:<br>
+      <input type="radio" name="beantype" value="beans">Coffee in beans<br>
+      <input type="radio" name="beantype" value="milled" checked> Milled coffee
+    </p>
+    <p>
+      Number of bags: <input type="number" name="bags" min="1" max="10"> <br>
+      Deliver to date: <input type="date" name="date">
+    </p>
+    <p>
+      Additional service:<br>
+      <input type="checkbox" name="extras[]" value="gift wrap">Gift wrap<br>
+      <input type="checkbox" name="extras[]" value="catalog" checked>Delivery catalog with order
+    </p>
+    <p>Ship to: <br>
+      Name: <input type="text" name="name"><br>
+      Addres: <input type="text" name="address"><br>
+      City: <input type="text" name="city"><br>
+      State: <input type="text" name="state"><br>
+      Zipcode: <input type="text" name="zip"><br>
+      Phone number: <input type="tel" name="phone">
+    </p>
+    <p>
+      Customer comments:<br>
+      <textarea name="comments"></textarea>
+    </p>
+    <input type="submit" value="Order now">
+  </form>
 
 
-
-  </body>
+</body>
 </html>
 
